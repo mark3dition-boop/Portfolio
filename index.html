@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Moammar Arvihan Khadafi - Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- Google Fonts & FontAwesome -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+    <!-- 1. Navbar -->
+    <nav class="navbar">
+    <div class="nav-container">
+        <div class="logo">
+        <span class="logo-name">Moammar Arvihan Khadafi</span>
+        <span class="logo-title">SOFTWARE ENGINEER & AI SPECIALIST</span>
+        </div>
+
+        <!-- Tombol Hamburger (Khusus Mobile/Tablet) -->
+        <button class="hamburger" id="hamburger-btn" aria-label="Toggle Navigation">
+        <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <!-- Navigation Links -->
+        <div class="nav-menu" id="nav-menu">
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#education">Certifications</a></li>
+            <li><a href="#resume">CV</a></li>
+        </ul>
+        <a href="#contact" class="btn btn-primary btn-sm nav-btn">Hire Me / Contact</a>
+        </div>
+    </div>
+    </nav>
+
+    <!-- 2. Hero / Introduction -->
+    <section class="hero">
+        <div class="container hero-grid">
+            <div class="hero-left">
+                <div class="badge-pill">
+                    <span class="dot"></span> Available for Software Engineering & AI/ML Collaborations
+                </div>
+                <h1 class="hero-title">Software Engineer & Machine Learning Enthusiast</h1>
+                <p class="hero-description">
+                Specializing in React Native mobile applications alongside applied machine learning, computer vision, and NLP pipelines. Building reactive cross-platform client architectures and intelligent slate models that solve tangible real-world problems.
+                </p>
+                <div class="hero-actions">
+                    <a href="#projects" class="btn btn-primary">Explore Featured Projects <i class="fa-solid fa-arrow-down"></i></a>
+                    <a href="#resume" class="btn btn-secondary"><i class="fa-solid fa-download"></i> Download CV / Resume</a>
+                </div>
+                <div class="tech-stack-row">
+                    <span class="stack-label">CORE STACK:</span>
+                    <span class="chip">React Native</span>
+                    <span class="chip">TypeScript</span>
+                    <span class="chip">Expo</span>
+                    <span class="chip">Python</span>
+                    <span class="chip">PyTorch</span>
+                    <span class="chip">Scikit-Learn</span>
+                    <span class="chip">OpenCV</span>
+                    <span class="chip">Streamlit</span>
+                    <span class="chip">Tensorflow</span>
+                    <span class="chip">HTML</span>
+                    <span class="chip">CSS</span>
+                    <span class="chip">Javascript</span>
+                    <span class="chip">Java</span>
+                    <span class="chip">C</span>
+                    <span class="chip">React</span>
+                    <span class="chip">Express Js</span>
+                    <span class="chip">Transformers</span>
+                </div>
+            </div>
+
+            <div class="hero-right">
+                <div class="profile-card">
+                    <div class="profile-img-container">
+                        <img src="https://lh3.googleusercontent.com/d/1hqqYYzJ8I9ogu6SLXrjcTa69pGW-hNHk" alt="Photo" class="profile-img">
+                        <!-- <div class="profile-overlay">
+                        <div class="profile-meta">
+                            <strong>Alex Rivera</strong>
+                            <span>React Native Specialist & AI</span>
+                        </div>
+                        <div class="profile-icon">
+                            <i class="fa-solid fa-fingerprint"></i>
+                        </div>
+                        </div> -->
+                    </div>
+                </div>
+        </div>
+
+        <!-- Stat Highlights Bar -->
+        <!-- <div id="stat-hl" class="container">
+        <div class="stats-bar">
+            <div class="stat-item">
+            <span class="stat-num">4</span>
+            <span class="stat-label"> -->
+                <!-- Shipped<br> -->
+                <!-- Flagship Open-Source Apps</span> -->
+            <!-- </div>
+            <div class="stat-item">
+            <span class="stat-num">89.8%</span>
+            <span class="stat-label"> -->
+                <!-- 91.7% Naive Bayes<br> -->
+                <!-- NLP Sentiment/SVC Accuracy</span> -->
+            <!-- </div>
+            <div class="stat-item">
+            <span class="stat-num">50K+</span>
+            <span class="stat-label"> -->
+                <!-- 50K+<br> -->
+                <!-- IMDB Dataset Records Evaluated</span>
+            </div>
+            <div class="stat-item">
+            <span class="stat-num">4</span>
+            <span class="stat-label"> -->
+                <!-- 4<br> -->
+                <!-- ML Vision & Precision Classes</span> -->
+            <!-- </div>
+        </div>
+        </div> -->
+    </section>
+
+    <!-- 3. About Me -->
+    <section id="about" class="section">
+        <div class="container">
+        <!-- <p class="section-tag">01 / BACKGROUND & VISION</p> -->
+        <h2 class="section-title">Bridging Intuitive Mobile Interfaces with Applied Intelligence</h2>
+        <div class="about-grid">
+            <div class="about-text">
+            <p>
+                I am a software engineer focused on developing accessible, responsive React Native applications and applied machine learning models. My journey encompasses building user-first digital products—such as campus community lost-and-found networks and intelligent personal budgeting engines—backed by cloud services like Supabase and PostgreSQL.
+            </p>
+            <p>
+                In parallel, my passion for machine learning manifests in end-to-end computer vision and natural language processing pipelines. From segmenting and classifying fruit ripeness through OpenCV/HSV color masking to benchmarking high-accuracy text classifiers on tens of thousands of movie reviews, I enjoy turning algorithmic concepts into functional, interactive tools deployed on Streamlit.
+            </p>
+            <p>
+                My development approach centers on clean modular architecture, declarative Reactive state, strong static typing, and reproducible ML workflows with scikit-learn and Python.
+            </p>
+            <div class="current-focus">
+                <span class="focus-title">CURRENT RESEARCH & STACK FOCUS:</span>
+                <div class="focus-tags">
+                <span class="tag-outline">Cross-Platform React Native & Expo</span>
+                <span class="tag-outline">Supabase Realtime & Row-Level Security</span>
+                <span class="tag-outline">Computer Vision - Image Preprocessing</span>
+                <span class="tag-outline">NLP - Text Preprocessing</span>
+                <span class="tag-outline">Streamlit ML Web Deployments</span>
+                <span class="tag-outline">Machine Learning Engineering</span>
+                <span class="tag-outline">Deep Learning Architecture - ANN, CNN, Transformers</span>
+                <span class="tag-outline">Full-Stack Development</span>
+                </div>
+            </div>
+            </div>
+
+            <div class="about-cards">
+            <div class="feature-card">
+                <div class="icon-box blue"><i class="fa-solid fa-mobile-screen"></i></div>
+                <div class="feature-info">
+                <h3>Cross-Platform Mobile Precision</h3>
+                <p>Designing native-feel mobile interfaces using Fluent Native and Expo with custom 60fps animations, intuitive gesture navigation, and robust offline caching.</p>
+                </div>
+            </div>
+            <div class="feature-card">
+                <div class="icon-box orange"><i class="fa-solid fa-brain"></i></div>
+                <div class="feature-info">
+                <h3>Applied Machine Learning</h3>
+                <p>Developing practical ML models—from Support Vector Classifiers with TF-IDF kernels to text sentiment analyzers—with clear pipelines from data cleaning to live execution.</p>
+                </div>
+            </div>
+            <div class="feature-card">
+                <div class="icon-box dark"><i class="fa-solid fa-database"></i></div>
+                <div class="feature-info">
+                <h3>Secure, Real-Time Backends</h3>
+                <p>Leveraging Serverless Relational PostgreSQL tables, and RLS (Row-Level Security) via Supabase to enable multi-user collaboration and rapid sync.</p>
+                </div>
+            </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- 4. Skills -->
+    <section id="skills" class="section bg-light">
+        <div class="container">
+        <!-- <p class="section-tag">02 / TECHNICAL SKILLSET & STACK</p> -->
+        <h2 class="section-title">Engineering & Applied AI Capabilities</h2>
+        <p class="section-subtitle">A grounded toolset for modern mobile app development, cloud backends, and practical machine learning algorithms.</p>
+
+        <div class="skills-grid">
+            <!-- Skill Column 1 -->
+            <div class="skill-column">
+            <div class="skill-header">
+                <div class="icon-box blue-sm"><i class="fa-solid fa-mobile-button"></i></div>
+                <div>
+                <h3>Mobile & Frontend</h3>
+                <span class="skill-badge blue">React & Native</span>
+                </div>
+            </div>
+            <p class="skill-desc">Native and cross-platform Client stacks built for iOS and Android with strict TypeScript validation and streamlined deployment on Expo/EAS.</p>
+            
+            <div class="skill-bars">
+                <div class="bar-group">
+                <div class="bar-info"><span>React Native & Expo Ecosystem</span><span>94%</span></div>
+                <div class="bar-bg"><div class="bar-fill blue" style="width: 94%;"></div></div>
+                </div>
+                <div class="bar-group">
+                <div class="bar-info"><span>TypeScript / Strict Typing</span><span>92%</span></div>
+                <div class="bar-bg"><div class="bar-fill blue" style="width: 92%;"></div></div>
+                </div>
+                <div class="bar-group">
+                <div class="bar-info"><span>React Web Application</span><span>90%</span></div>
+                <div class="bar-bg"><div class="bar-fill blue" style="width: 90%;"></div></div>
+                </div>
+                <div class="bar-group">
+                <div class="bar-info"><span>State & Local Storage</span><span>88%</span></div>
+                <div class="bar-bg"><div class="bar-fill blue" style="width: 88%;"></div></div>
+                </div>
+            </div>
+            <div class="mini-chips">
+                <span>React Native</span><span>Expo</span><span>TypeScript</span><span>Async Storage</span><span>UI Kit</span>
+            </div>
+            </div>
+
+            <!-- Skill Column 2 -->
+            <div class="skill-column">
+            <div class="skill-header">
+                <div class="icon-box orange-sm"><i class="fa-solid fa-server"></i></div>
+                <div>
+                <h3>Backend & Cloud</h3>
+                <span class="skill-badge orange">Relational & Serverless</span>
+                </div>
+            </div>
+            <p class="skill-desc">Cloud database modeling, secure authentication, real-time sync subscriptions, and scalable API integration.</p>
+            
+            <div class="skill-bars">
+                <div class="bar-group">
+                <div class="bar-info"><span>Supabase (Auth, DB & Storage)</span><span>93%</span></div>
+                <div class="bar-bg"><div class="bar-fill orange" style="width: 93%;"></div></div>
+                </div>
+                <div class="bar-group">
+                <div class="bar-info"><span>PostgreSQL & Row-Level Security</span><span>89%</span></div>
+                <div class="bar-bg"><div class="bar-fill orange" style="width: 89%;"></div></div>
+                </div>
+                <div class="bar-group">
+                <div class="bar-info"><span>RESTful APIs & Webhook Integration</span><span>85%</span></div>
+                <div class="bar-bg"><div class="bar-fill orange" style="width: 85%;"></div></div>
+                </div>
+                <div class="bar-group">
+                <div class="bar-info"><span>Git & GitHub Collaborative Workflows</span><span>91%</span></div>
+                <div class="bar-bg"><div class="bar-fill orange" style="width: 91%;"></div></div>
+                </div>
+            </div>
+            <div class="mini-chips">
+                <span>PostgreSQL</span><span>Supabase</span><span>RLS Security</span><span>REST APIs</span><span>Git/GitHub</span><span>Vercel</span>
+            </div>
+            </div>
+
+            <!-- Skill Column 3 -->
+            <div class="skill-column">
+            <div class="skill-header">
+                <div class="icon-box dark-sm"><i class="fa-solid fa-microchip"></i></div>
+                <div>
+                <h3>ML & Computer Vision</h3>
+                <span class="skill-badge dark">AI & Analytics</span>
+                </div>
+            </div>
+            <p class="skill-desc">Applied machine learning, NLP preprocessing pipelines, computer vision color segmentation, and interactive Streamlit web apps.</p>
+            
+            <div class="skill-bars">
+                <div class="bar-group">
+                <div class="bar-info"><span>Python Data Science (NumPy, Pandas)</span><span>92%</span></div>
+                <div class="bar-bg"><div class="bar-fill dark" style="width: 92%;"></div></div>
+                </div>
+                <div class="bar-group">
+                <div class="bar-info"><span>Scikit-Learn (SVC, TF-IDF, Bayes, RF)</span><span>89%</span></div>
+                <div class="bar-bg"><div class="bar-fill dark" style="width: 89%;"></div></div>
+                </div>
+                <div class="bar-group">
+                <div class="bar-info"><span>OpenCV HSV Masking & Augmentation</span><span>86%</span></div>
+                <div class="bar-bg"><div class="bar-fill dark" style="width: 86%;"></div></div>
+                </div>
+                <div class="bar-group">
+                <div class="bar-info"><span>Streamlit Web Model Deployment</span><span>94%</span></div>
+                <div class="bar-bg"><div class="bar-fill dark" style="width: 94%;"></div></div>
+                </div>
+            </div>
+            <div class="mini-chips">
+                <span>Python</span><span>Scikit-Learn</span><span>OpenCV</span><span>NLTK</span><span>Streamlit</span><span>Matplotlib</span>
+            </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- 5. Featured Projects -->
+    <section id="projects" class="section">
+        <div class="container">
+        <!-- <p class="section-tag">03 / FEATURED PROJECTS & CASE STUDIES</p> -->
+        <h2 class="section-title">Open Source GitHub Projects</h2>
+        <p class="section-subtitle">Production-grade mobile software and applied machine learning research with public source code.</p>
+
+        <div class="projects-stack">
+            
+            <!-- Project 1: trer_Fonect -->
+            <div class="project-item">
+            <div class="project-content">
+                <div class="project-tags-top">
+                <span class="chip-sm blue">MOBILE APP</span>
+                <span class="chip-sm grey">CAMPUS COMMUNITY NETWORK</span>
+                </div>
+                <h3 class="project-title">Fonect</h3>
+                <p class="project-desc">
+                A digitized and round-table platform built with React Native and Supabase for university environments. Features real-time lost-and-found reporting with photo uploads, category-based keyword search, item verification, and a peer-to-peer leaderboard system to foster campus collaboration.
+                </p>
+                <div class="project-stats-grid">
+                <div class="p-stat">
+                    <span class="p-label">KEY FEATURES</span>
+                    <span class="p-value">Identified Items & Ranks</span>
+                </div>
+                <div class="p-stat">
+                    <span class="p-label">SECURITY</span>
+                    <span class="p-value">Auth & Tech Verification</span>
+                </div>
+                <div class="p-stat">
+                    <span class="p-label">STACK</span>
+                    <span class="p-value">React Native + Supabase</span>
+                </div>
+                </div>
+                <div class="project-tags-bottom">
+                <span>React Native</span><span>Expo Mobile</span><span>Supabase Cloud</span><span>PostgreSQL</span>
+                </div>
+                <div class="project-links">
+                <a href="https://github.com/mark3dition-boop/trer_Fonect" target="_blank" class="btn btn-primary"><i class="fa-brands fa-github"></i> GitHub Repository</a>
+                <!-- <a href="#" class="btn btn-secondary"><i class="fa-solid fa-desktop"></i> Interactive Demo</a> -->
+                </div>
+            </div>
+            <div class="project-visual bg-blue-subtle">
+                <div class="visual-card">
+                <div class="visual-icon blue"><i class="fa-solid fa-share-nodes"></i></div>
+                <h4>Fonect Mobile App</h4>
+                <p>Smart lost and found mobile app with real-time photo uploads, claim verification flow, and community leaderboard.</p>
+                <span class="badge-mini">BUILD WITH REACT NATIVE & EXPO</span>
+                </div>
+            </div>
+            </div>
+
+            <!-- Project 2: Expense Tracker -->
+            <div class="project-item reverse">
+            <div class="project-content">
+                <div class="project-tags-top">
+                <span class="chip-sm orange">MOBILE UTILITY</span>
+                <span class="chip-sm grey">SYSTEM MANAGEMENT</span>
+                </div>
+                <h3 class="project-title">Eextrax — Personal Finance & Expense Tracker</h3>
+                <p class="project-desc">
+                A clean, minimalist personal finance tracking application designed to help users monitor daily expenses, manage monthly budget thresholds with multi-stage visual indicator alerts, remaining budget, and itemized breakdown clear visibility into spending habits.
+                </p>
+                <div class="project-stats-grid">
+                <div class="p-stat">
+                    <span class="p-label">BUDGET ALERTS</span>
+                    <span class="p-value">Safe, Warning & Exceeded</span>
+                </div>
+                <div class="p-stat">
+                    <span class="p-label">DATA ACCESS</span>
+                    <span class="p-value">RLS & Local Persistence</span>
+                </div>
+                <div class="p-stat">
+                    <span class="p-label">STACK</span>
+                    <span class="p-value">React Native + Supabase</span>
+                </div>
+                </div>
+                <div class="project-tags-bottom">
+                <span>React Native</span><span>Expo</span><span>TypeScript</span><span>Supabase PostgreSQL</span><span>Async Storage</span>
+                </div>
+                <div class="project-links">
+                <a href="https://github.com/mark3dition-boop/expense_tracker" target="_blank" class="btn btn-primary"><i class="fa-brands fa-github"></i> GitHub Repository</a>
+                <!-- <a href="#" class="btn btn-secondary"><i class="fa-solid fa-code"></i> View Codebase</a> -->
+                </div>
+            </div>
+            <div class="project-visual bg-orange-subtle">
+                <div class="visual-card">
+                <div class="visual-icon orange"><i class="fa-solid fa-wallet"></i></div>
+                <h4>Extrax Expense Manager</h4>
+                <p>Personal finance tracker with real-time budget monitoring, color-coded visual tooltips, and encrypted local storage.</p>
+                <span class="badge-mini orange">DEPLOYED FOR ANDROID / REACT NATIVE</span>
+                </div>
+            </div>
+            </div>
+
+            <!-- Project 3: Mango Ripeness Classification -->
+            <div class="project-item">
+            <div class="project-content">
+                <div class="project-tags-top">
+                <span class="chip-sm dark">COMPUTER VISION</span>
+                <span class="chip-sm grey">HSV COLOR MODEL / STREAMLIT</span>
+                </div>
+                <h3 class="project-title">Mango Ripeness Classification</h3>
+                <p class="project-desc">
+                An automated fruit quality inspection system built with OpenCV color thresholding segmentation and Support Vector Classifier (SVC) with HSV kernels. Includes comprehensive data augmentation, contour filter algorithms, and an interactive Streamlit app demonstrating real-time ripeness prediction.
+                </p>
+                <div class="project-stats-grid">
+                <div class="p-stat">
+                    <span class="p-label">CATEGORIES</span>
+                    <span class="p-value">4 Ripeness Classes</span>
+                </div>
+                <div class="p-stat">
+                    <span class="p-label">SEGMENTATION</span>
+                    <span class="p-value">OpenCV HSV Masking</span>
+                </div>
+                <div class="p-stat">
+                    <span class="p-label">DEPLOYMENT</span>
+                    <span class="p-value">Streamlit Dashboard</span>
+                </div>
+                </div>
+                <div class="project-tags-bottom">
+                <span>Python</span><span>OpenCV</span><span>Scikit-Learn (SVC)</span><span>Streamlit</span><span>NumPy</span>
+                </div>
+                <div class="project-links">
+                <a href="https://github.com/mark3dition-boop/Mango-Ripeness-Classification" target="_blank" class="btn btn-primary"><i class="fa-brands fa-github"></i> GitHub Repository</a>
+                <!-- <a href="#" class="btn btn-secondary"><i class="fa-solid fa-chart-pie"></i> View Model Pipeline</a> -->
+                </div>
+            </div>
+            <div class="project-visual bg-dark-subtle">
+                <div class="visual-card">
+                <div class="visual-icon dark"><i class="fa-solid fa-camera"></i></div>
+                <h4>Computer Vision Classifier</h4>
+                <p>HSV color space isolation detecting Unripe, Partially Ripe, Ripe, and Overripe fruit samples with real-time visual inspection in Streamlit.</p>
+                <span class="badge-mini dark">RUNS ON PYTHON, OPENCV, STREAMLIT & SCIKIT-LEARN</span>
+                </div>
+            </div>
+            </div>
+
+            <!-- Project 4: Film Review Sentiment -->
+            <div class="project-item reverse">
+            <div class="project-content">
+                <div class="project-tags-top">
+                <span class="chip-sm blue">NATURAL LANGUAGE PROCESSING</span>
+                <span class="chip-sm grey">TEXT CLASSIFICATION</span>
+                </div>
+                <h3 class="project-title">Film Review Sentiment Classifier</h3>
+                <p class="project-desc">
+                Binary sentiment classification on 50,000 IMDB movie reviews utilizing NLTK text preprocessing (HTML stripping, contraction expansion, Porter stemming, stopword removal) and comparative ML modeling (Linear SVC 89.8% accuracy and Multinomial Naive Bayes 85.7%). Deployed via interactive Streamlit interface.
+                </p>
+                <div class="project-stats-grid">
+                <div class="p-stat">
+                    <span class="p-label">MODEL ACCURACY</span>
+                    <span class="p-value">89.8% Linear SVC</span>
+                </div>
+                <div class="p-stat">
+                    <span class="p-label">DATASET</span>
+                    <span class="p-value">50K IMDB Reviews</span>
+                </div>
+                <div class="p-stat">
+                    <span class="p-label">DEPLOYMENT</span>
+                    <span class="p-value">Streamlit Comparison</span>
+                </div>
+                </div>
+                <div class="project-tags-bottom">
+                <span>Python</span><span>Scikit-Learn</span><span>NLTK</span><span>TF-IDF Vectorizer</span><span>Streamlit</span>
+                </div>
+                <div class="project-links">
+                <a href="https://github.com/Raxzell/Film-Review-Sentiment" target="_blank" class="btn btn-primary"><i class="fa-brands fa-github"></i> GitHub Repository</a>
+                <!-- <a href="#" class="btn btn-secondary"><i class="fa-solid fa-scale-balanced"></i> Comparative Benchmark</a> -->
+                </div>
+            </div>
+            <div class="project-visual bg-blue-subtle">
+                <div class="visual-card">
+                <div class="visual-icon blue"><i class="fa-solid fa-comments"></i></div>
+                <h4>NLP Sentiment Engine</h4>
+                <p>Text pipeline extracting features from unstructured user reviews to benchmark Linear SVC vs. Naive Bayes classification performance.</p>
+                <span class="badge-mini blue">TRAINED ON 50K IMDB REVIEWS DATASET</span>
+                </div>
+            </div>
+            </div>
+
+        </div>
+        </div>
+    </section>
+
+    <!-- 6. Education & 7. Achievements Side-by-Side -->
+    <section id="education" class="section bg-light">
+        <div class="container duo-grid">
+        
+        <!-- Education Column -->
+        <div class="duo-col">
+            <!-- <p class="section-tag">04 / QUALIFICATIONS</p> -->
+            <h2 class="section-title">Academic Education</h2>
+            <div class="card-box">
+                <div class="card-badge orange">INITIAL DEGREE</div>
+                <span class="card-date">GPA: 3.60 / 4.00</span>
+                <h3>BINUS University</h3>
+                <span class="card-sub">Computer Science</span>
+                <p>I'm a Computer Science student with a strong interest in software development, machine learning, and building technology-driven solutions. Experienced in developing academic and personal projects across mobile application development, machine learning, and data science. 
+                    Passionate about continuously learning new technologies and applying technical skills to solve real-world problems.</p>
+            </div>
+            <!-- <div class="card-box margin-top">
+                <div class="card-badge blue">SPECIALIZED CERTIFICATE</div>
+                <span class="card-date">Professional Track</span>
+                <h3>Advanced Machine Learning & Computer Vision</h3>
+                <span class="card-sub">AI & Data Science Specialization</span>
+                <p>Intensive applied module training featuring HSV masking, OpenCV image filtering, vector learning algorithms with Support Vector Machine (SVM) text classifiers.</p>
+            </div> -->
+        </div>
+
+        <!-- Certifications Column -->
+        <div id="achievements" class="duo-col-cer">
+            <!-- <p class="section-tag">05 / RECOGNITIONS</p> -->
+            <h2 class="section-title">Certifications</h2>
+            <div class="cert-grid">
+            
+            <div class="cert-card">
+                <!-- <div class="cert-icon orange"><i class="fa-solid fa-graduation-cap"></i></div> -->
+                <div class="cert-info">
+                <h4>Web Development</h4>
+                <span class="cert-issuer">Sololearn</span>
+                <img src="https://lh3.googleusercontent.com/d/1FTzQoRAnRLMYV4x9nJxGGBwgEPoujSiv">
+                </div>
+            </div>
+            <!-- https://drive.google.com/file/d/1NDcYIzJGiwLil0Ea9wJ_GLI7EsYmUEwH/view?usp=drive_link -->
+             <!-- https://drive.google.com/file/d/1l-MsnakjNQ9CqGoxgU_hdpb4JLK30Z_a/view?usp=drive_link -->
+              <!-- https://drive.google.com/file/d/1PKD4PJG43uO3y4JWjvwtoe34E7AfPS9C/view?usp=drive_link -->
+               <!-- https://drive.google.com/file/d/1FTzQoRAnRLMYV4x9nJxGGBwgEPoujSiv/view?usp=drive_link -->
+            <div class="cert-card">
+                <!-- <div class="cert-icon blue"><i class="fa-solid fa-mobile"></i></div> -->
+                <div class="cert-info">
+                <h4>Azure AI Fundamentals</h4>
+                <span class="cert-issuer">Microsoft</span>
+                <img src="https://lh3.googleusercontent.com/d/1l-MsnakjNQ9CqGoxgU_hdpb4JLK30Z_a">
+                </div>
+            </div>
+
+            <!-- <div class="cert-card">
+                <div class="cert-icon orange"><i class="fa-solid fa-award"></i></div>
+                <div class="cert-info">
+                <h4>Top Mobile Project</h4>
+                <span class="cert-issuer">Campus Innovation Showcase</span>
+                <p>Honors for Fonect Mobile App System</p>
+                </div>
+            </div>
+
+            <div class="cert-card">
+                <div class="cert-icon dark"><i class="fa-solid fa-cloud"></i></div>
+                <div class="cert-info">
+                <h4>Supabase Cloud Architect</h4>
+                <span class="cert-issuer">PostgreSQL & Security Practices</span>
+                <p>PostgreSQL, RLS, Auth, Realtime</p>
+                </div>
+            </div> -->
+
+            </div>
+        </div>
+
+        </div>
+    </section>
+
+    <!-- 8. Resume / CV Overview -->
+    <section id="resume" class="section">
+        <div class="container">
+        <div class="resume-wrapper bg-light">
+            <div class="resume-header">
+            <div>
+                <!-- <p class="section-tag">06 / CURRICULUM VITAE</p> -->
+                <h2 class="section-title left">Curriculum Vitae Overview</h2>
+                <p class="section-desc">Comprehensive overview with technical competencies, project experience, and academic background.</p>
+            </div>
+            <div class="resume-actions">
+                <a href="https://drive.google.com/uc?export=download&id=142uoksMVgGHbzmbzH4ikst44MhUL5SvI" class="btn btn-primary"><i class="fa-solid fa-download"></i> Download Full PDF (Updated 2026)</a>
+                <!-- <button class="btn btn-secondary-sm"><i class="fa-regular fa-copy"></i> Copy Content</button> -->
+                 <!-- https://drive.google.com/file/d/142uoksMVgGHbzmbzH4ikst44MhUL5SvI/view?usp=drive_link -->
+            </div>
+            </div>
+
+            <div class="resume-grid">
+            <div class="resume-box">
+                <h4>EXECUTIVE SUMMARY</h4>
+                <p>Software Engineer specializing in React Native mobile application development and applied machine learning models. Built campus lost-and-found networks and ML sentiment analysis with scikit-learn. Experienced with Supabase backend and end-to-end management of deployment.</p>
+            </div>
+            <div class="resume-box">
+                <h4>PRIMARY COMPETENCIES</h4>
+                <div class="resume-tags">
+                <span>React Native</span><span>TypeScript</span><span>Expo</span><span>Python</span><span>Scikit-Learn</span><span>OpenCV</span><span>PostgreSQL</span><span>Supabase RLS</span>
+                </div>
+            </div>
+            <div class="resume-box">
+                <h4>KEY HIGHLIGHTS</h4>
+                <ul class="resume-bullets">
+                <li>4 Production & Research GitHub Projects</li>
+                <li>89.8% NLP Sentiment Accuracy on 50K IMDB Reviews</li>
+                <li>Fruit Vision HSV Ripeness Segmentation with OpenCV</li>
+                </ul>
+            </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- 9. Contact Section -->
+    <section id="contact" class="section bg-light">
+        <div class="container">
+        <!-- <p class="section-tag">07 / INITIATE DIALOGUE</p> -->
+        <h2 class="section-title">Let's Build Something Impactful</h2>
+
+        <div class="contact-grid">
+            <!-- Contact Info Left -->
+            <div class="contact-info">
+            <div class="status-badge">
+                <span class="badge-dot"></span> STATUS: AVAILABLE FOR POSITION & PROJECTS
+            </div>
+            <h3>Open for Opportunities</h3>
+            <p class="contact-sub">Considering React Native mobile engineering positions, ML ML/AI developer roles, and open-source software collaborations.</p>
+
+            <div class="info-list">
+                <div class="info-item">
+                <i class="fa-solid fa-envelope"></i>
+                <div>
+                    <span class="info-label">DIRECT EMAIL</span>
+                    <span class="info-val">mark3dition@gmail.com</span>
+                </div>
+                </div>
+                <div class="info-item">
+                <i class="fa-solid fa-location-dot"></i>
+                <div>
+                    <span class="info-label">LOCATION</span>
+                    <span class="info-val">Available for Remote & On-Site Collaborations</span>
+                </div>
+                </div>
+                <div class="info-item">
+                <i class="fa-solid fa-clock"></i>
+                <div>
+                    <span class="info-label">TIMEZONE</span>
+                    <span class="info-val">Flexible (Global Overlap)</span>
+                </div>
+                </div>
+            </div>
+            </div>
+
+            <!-- Contact Form Right -->
+            <div class="contact-card">
+            <h4>Send Direct Inquiry</h4>
+            <p>Fill out the form below. Messages dispatch directly to my priority encrypted inbox.</p>
+            <form class="form-body">
+                <div class="form-row">
+                <div class="form-group">
+                    <label>Your Full Name</label>
+                    <input type="text" placeholder="e.g. Sarah Jenkins" required>
+                </div>
+                <div class="form-group">
+                    <label>Email Address</label>
+                    <input type="email" placeholder="sarah@company.com" required>
+                </div>
+                </div>
+                <div class="form-group">
+                <label>Subject / Team</label>
+                <input type="text" placeholder="e.g. REACT NATIVE / MOBILE APP PROJECT" required>
+                </div>
+                <div class="form-group">
+                <label>Project Details / Message</label>
+                <textarea rows="4" placeholder="Describe your project, objectives, timeline, or job expectations..." required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary btn-full">Transmit Message <i class="fa-solid fa-paper-plane"></i></button>
+            </form>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-left">
+                <h3>Moammar Arvihan Khadafi <br /><span class="badge-sm">AVAILABLE FOR HIRE</span></h3>
+                <!-- <p>Software Engineer & ML Enthusiast specializing in React Native mobile apps, 
+                    <br />computer vision segmentation, natural language processing pipelines, 
+                    <br />and deep learning architectures.
+                </p> -->
+            </div>
+            <!-- <div class="footer-links">
+                <span class="footer-heading">NAVIGATION</span>
+                <a href="#about">About Repository</a>
+                <a href="#projects">GitHub Projects</a>
+                <a href="#achievements">Honors & Awards</a>
+                <a href="#contact">Direct Touch</a>
+            </div>
+            <div class="footer-links">
+                <span class="footer-heading">TECH STACK & DATA</span>
+                <a href="#skills">React Native & Data Docs</a>
+                <a href="#education">Education</a>
+                <a href="#resume">Resume CV</a>
+            </div> -->
+            <div class="footer-links">
+                <span class="footer-heading">PROFILES</span>
+                <a href="https://github.com/mark3dition-boop" target="_blank"><i class="fa-brands fa-github"></i>   mark3dition-boop</a>
+                <a href="https://www.instagram.com/4rvihan/" target="_blank"><i class="fa-brands fa-instagram"></i>   4rvihan</a>
+                <a href="https://www.linkedin.com/in/moammar-arvihan-khadafi-852730288"><i class="fa-brands fa-linkedin"></i>   Moammar Arvihan Khadafi</a>
+                <a href="#"><i class="fa-solid fa-envelope"></i>   mark3dition@gmail.com</a>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <p>&copy; 2025 Moammar Arvihan Khadafi</p>
+            <div class="footer-bottom-links">
+                <a href="#">Privacy Architecture</a>
+                <a href="#">Terms & License</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
