@@ -590,7 +590,7 @@ img {
   border-radius: 20px;
   padding: 36px;
   display: grid;
-  grid-template-columns: 1.2fr 0.8fr;
+  grid-template-columns: 1.2fr 0.5fr;
   gap: 40px;
   box-shadow: var(--shadow-card);
   transition: transform 0.2s, box-shadow 0.2s;
@@ -602,7 +602,7 @@ img {
 }
 
 .project-item.reverse {
-  grid-template-columns: 0.8fr 1.2fr;
+  grid-template-columns: 0.5fr 1.2fr;
 }
 
 .project-item.reverse .project-content {
@@ -701,6 +701,9 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
+  /* width: 70%; */
+  /* background-color: green; */
+  position: relative;
 }
 
 .bg-blue-subtle { background-color: rgba(78, 107, 191, 0.08); border: 1px solid rgba(78, 107, 191, 0.15); }
@@ -1212,6 +1215,33 @@ img {
 }
 
 
+
+
+.swiper {
+    max-width: 250px;
+    max-height: auto;
+}
+
+.swiper-wrapper {
+    position: relative;
+    width: 100%;
+    overflow: visible;
+}
+
+.swiper-button-prev {
+    left: 7px !important;
+     --swiper-navigation-size: 20px;
+}
+
+.swiper-button-next {
+    right: 7px !important;
+     --swiper-navigation-size: 20px;
+}
+
+.swiper-pagination {
+    bottom: -0.5px !important;
+}
+
 /* ==========================================================================
    RESPONSIVE DESIGN (MEDIA QUERIES)
    ========================================================================== */
@@ -1436,6 +1466,25 @@ img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+  }
+
+  .project-item {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .project-visual {
+    justify-content: center;
+  }
+
+    .swiper-button-prev {
+      left: 5px !important;
+      --swiper-navigation-size: 20px;
+  }
+
+  .swiper-button-next {
+      right: 5px !important;
+      --swiper-navigation-size: 20px;
   }
 
 }

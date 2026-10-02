@@ -74,3 +74,82 @@ const navLinks = document.querySelectorAll('.nav-links a, .nav-btn');
       });
     });
   }
+
+  // https://drive.google.com/file/d/1i5RZeGPJVeC1w82JqgTtIWcI36E5X3wO/view?usp=drive_link
+  // https://drive.google.com/file/d/1jXuG_Wrmy6_VFMkEDNRwYIFXLG5xgX0G/view?usp=drive_link
+  // https://drive.google.com/file/d/1IHIVGIXbLFxs5tT5BJ_rbomVWYO0Cgyy/view?usp=drive_link
+  // https://drive.google.com/file/d/1yoEYhhWYwxxKJneqiTGhLdcBilTL4R8R/view?usp=drive_link
+  // https://drive.google.com/file/d/10X_N-W6vwhMD1H5WzQkdpF9cOunJ8LCw/view?usp=drive_link
+  // https://drive.google.com/file/d/1qwGZ93vbC2gr6Nt6jJO7U6ng6Ep17PcQ/view?usp=drive_link
+  // https://drive.google.com/file/d/1nuI3GErYqPHnpKiJfhWwZsPAhlLSoU5z/view?usp=drive_link
+
+
+// const swiper = new Swiper('.swiper', {
+//         loop: true,
+
+//         navigation: {
+//             nextEl: '.swiper-button-next',
+//             prevEl: '.swiper-button-prev',
+//         },
+
+//         pagination: {
+//             el: '.swiper-pagination',
+//         },
+//  });
+
+document.querySelectorAll('.swiper-container').forEach((container) => {
+
+    const swiperElement = container.querySelector('.swiper');
+
+    new Swiper(swiperElement, {
+        loop: true,
+
+        navigation: {
+            nextEl: container.querySelector('.swiper-button-next'),
+            prevEl: container.querySelector('.swiper-button-prev'),
+        },
+
+        pagination: {
+            el: container.querySelector('.swiper-pagination'),
+            clickable: true,
+        },
+    });
+
+});
+
+// Cari semua elemen dengan kelas .swiper
+// document.querySelectorAll('.swiper').forEach((swiperContainer) => {
+//   new Swiper(swiperContainer, {
+//     direction: 'horizontal',
+//     loop: true,
+//     pagination: {
+//       el: swiperContainer.querySelector('.swiper-pagination'),
+//       clickable: true,
+//     },
+//     navigation: {
+//       nextEl: swiperContainer.querySelector('.swiper-button-next'),
+//       prevEl: swiperContainer.querySelector('.swiper-button-prev'),
+//     },
+//   });
+// });
+
+// document.querySelectorAll('.swiper').forEach((swiperContainer) => {
+//   const nextButton = swiperContainer.querySelector('.swiper-button-next');
+//   const prevButton = swiperContainer.querySelector('.swiper-button-prev');
+//   const pagination = swiperContainer.querySelector('.swiper-pagination');
+
+//   new Swiper(swiperContainer, {
+//     direction: 'horizontal',
+//     loop: true,
+
+//     pagination: {
+//       el: pagination,
+//       clickable: true,
+//     },
+
+//     navigation: {
+//       nextEl: nextButton,
+//       prevEl: prevButton,
+//     },
+//   });
+// });
