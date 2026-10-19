@@ -1,6 +1,3 @@
-/* ==========================================
-   DESIGN SYSTEM: WARM ARCHITECTURAL MODERN
-   ========================================== */
 :root {
   /* Color Palette */
   --primary: #F29829;               /* Solar Amber Accent */
@@ -69,8 +66,6 @@ img {
 /* Section Spacing & Sticky Navbar Offset */
 .section {
   padding: 100px 0;
-  scroll-margin-top: 10px; /* Agar scroll tidak tertutup Navbar */
-  scroll-margin-bottom: 80px;
 }
 
 .bg-light {
@@ -224,10 +219,10 @@ img {
 /* 2. Hero Section */
 .hero {
   padding: 60px 0 0 0;
-  scroll-margin-top: 80px;
-  /* scroll-margin-bottom: 80px; */
+  /* scroll-margin-top: 80px;
+  scroll-margin-bottom: 80px; */
   margin-top: -20px;
-  margin-bottom: 40px;
+  margin-bottom: 60px;
 }
 
 .hero-grid {
@@ -894,7 +889,7 @@ img {
 
 .resume-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 24px;
 }
 
@@ -1203,11 +1198,19 @@ img {
 }
 
 #education {
-  scroll-margin-top: 170px;
+  scroll-margin-top: 130px;
 }
 
 #resume {
   scroll-margin-top: 100px;
+}
+
+#about {
+  scroll-margin-top: -20px;
+}
+
+#skills {
+  scroll-margin-top: -10px;
 }
 
 #stat-hl {
@@ -1246,7 +1249,7 @@ img {
    RESPONSIVE DESIGN (MEDIA QUERIES)
    ========================================================================== */
 
-/* 1. TABLET & LAPTOP KECIL (Lebar Layar <= 1024px) */
+/* 1. TABLET & SMALL LAPTOP (Width <= 1024px) */
 @media screen and (max-width: 1024px) {
   .hero-grid {
     grid-template-columns: 1fr 0.8fr;
@@ -1263,13 +1266,13 @@ img {
   }
 
   .skills-grid {
-    grid-template-columns: 1fr; /* Stackvertikal agar progress bar lega */
+    grid-template-columns: 1fr;
     gap: 24px;
   }
 
   .project-item,
   .project-item.reverse {
-    grid-template-columns: 1fr; /* Stack gambar/visual di bawah teks */
+    grid-template-columns: 1fr;
     gap: 28px;
     padding: 28px;
   }
@@ -1305,7 +1308,7 @@ img {
 }
 
 
-/* 2. TABLET MODE PORTRAIT (Lebar Layar <= 768px) */
+/* 2. TABLET MODE PORTRAIT (Width <= 768px) */
 @media screen and (max-width: 768px) {
   .section {
     padding: 60px 0;
@@ -1337,10 +1340,10 @@ img {
     height: 350px;
   }
 
-  .about-grid {
-    grid-template-columns: 1fr;
+  /* .about-grid {
+    grid-template-columns: 1fr, 1fr;
     gap: 32px;
-  }
+  } */
 
   .contact-grid {
     grid-template-columns: 1fr;
@@ -1353,7 +1356,7 @@ img {
 }
 
 
-/* 3. MOBILE (Lebar Layar <= 576px) */
+/* 3. MOBILE (Width <= 576px) */
 /* ==========================================
    HAMBURGER MENU & MOBILE NAVIGATION
    ========================================== */
@@ -1378,12 +1381,12 @@ img {
 /* Responsive Mobile & Tablet (<= 768px) */
 @media screen and (max-width: 768px) {
   .hamburger {
-    display: block; /* Tampilkan tombol hamburger */
+    display: block; /* Show hamburger */
   }
 
   .nav-menu {
     position: fixed;
-    top: 70px; /* Di bawah navbar */
+    top: 70px;
     left: 0;
     right: 0;
     background-color: var(--surface);
@@ -1393,14 +1396,14 @@ img {
     padding: 24px;
     gap: 20px;
     
-    /* Efek Sembunyi / Slide Down */
+    /* Slide Down */
     opacity: 0;
     visibility: hidden;
     transform: translateY(-10px);
     transition: all 0.3s ease-in-out;
   }
 
-  /* State saat Hamburger diklik (Aktif) */
+  /* Hamburger when clicked */
   .nav-menu.active {
     opacity: 1;
     visibility: visible;

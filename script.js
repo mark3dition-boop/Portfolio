@@ -32,16 +32,14 @@ const navLinks = document.querySelectorAll('.nav-links a, .nav-btn');
 
   if (contactForm) {
     contactForm.addEventListener('submit', function(e) {
-      // 1. Tahan submit bawaan agar halaman TIDAK reload
+
       e.preventDefault();
 
-      // 2. Ambil nilai input berdasarkan ID masing-masing
       const name = document.getElementById('fullName').value.trim();
       const email = document.getElementById('email').value.trim();
       const subject = document.getElementById('subject').value.trim();
       const message = document.getElementById('message').value.trim();
 
-      // 3. Susun data payload dengan kunci standar yang dikenali Formspree (name, email, subject, message)
       const payload = {
         name: name,
         email: email,
@@ -51,19 +49,18 @@ const navLinks = document.querySelectorAll('.nav-links a, .nav-btn');
 
       console.log('Sending payload:', payload);
 
-      // 4. Kirim data ke Formspree via Fetch API
       fetch('https://formspree.io/f/mkjgplkk', {
         method: 'POST',
         headers: { 
           'Content-Type': 'application/json',
-          'Accept': 'application/json' // Memastikan tidak terjadi redirect halaman
+          'Accept': 'application/json'
         },
         body: JSON.stringify(payload)
       })
       .then(response => {
         if (response.ok) {
           console.log('Message sent successfully!');
-          contactForm.reset(); // Kosongkan isian form
+          contactForm.reset();
         } else {
           console.log('Failed to send message.');
         }
@@ -74,28 +71,6 @@ const navLinks = document.querySelectorAll('.nav-links a, .nav-btn');
       });
     });
   }
-
-  // https://drive.google.com/file/d/1i5RZeGPJVeC1w82JqgTtIWcI36E5X3wO/view?usp=drive_link
-  // https://drive.google.com/file/d/1jXuG_Wrmy6_VFMkEDNRwYIFXLG5xgX0G/view?usp=drive_link
-  // https://drive.google.com/file/d/1IHIVGIXbLFxs5tT5BJ_rbomVWYO0Cgyy/view?usp=drive_link
-  // https://drive.google.com/file/d/1yoEYhhWYwxxKJneqiTGhLdcBilTL4R8R/view?usp=drive_link
-  // https://drive.google.com/file/d/10X_N-W6vwhMD1H5WzQkdpF9cOunJ8LCw/view?usp=drive_link
-  // https://drive.google.com/file/d/1qwGZ93vbC2gr6Nt6jJO7U6ng6Ep17PcQ/view?usp=drive_link
-  // https://drive.google.com/file/d/1nuI3GErYqPHnpKiJfhWwZsPAhlLSoU5z/view?usp=drive_link
-
-
-// const swiper = new Swiper('.swiper', {
-//         loop: true,
-
-//         navigation: {
-//             nextEl: '.swiper-button-next',
-//             prevEl: '.swiper-button-prev',
-//         },
-
-//         pagination: {
-//             el: '.swiper-pagination',
-//         },
-//  });
 
 document.querySelectorAll('.swiper-container').forEach((container) => {
 
@@ -116,40 +91,3 @@ document.querySelectorAll('.swiper-container').forEach((container) => {
     });
 
 });
-
-// Cari semua elemen dengan kelas .swiper
-// document.querySelectorAll('.swiper').forEach((swiperContainer) => {
-//   new Swiper(swiperContainer, {
-//     direction: 'horizontal',
-//     loop: true,
-//     pagination: {
-//       el: swiperContainer.querySelector('.swiper-pagination'),
-//       clickable: true,
-//     },
-//     navigation: {
-//       nextEl: swiperContainer.querySelector('.swiper-button-next'),
-//       prevEl: swiperContainer.querySelector('.swiper-button-prev'),
-//     },
-//   });
-// });
-
-// document.querySelectorAll('.swiper').forEach((swiperContainer) => {
-//   const nextButton = swiperContainer.querySelector('.swiper-button-next');
-//   const prevButton = swiperContainer.querySelector('.swiper-button-prev');
-//   const pagination = swiperContainer.querySelector('.swiper-pagination');
-
-//   new Swiper(swiperContainer, {
-//     direction: 'horizontal',
-//     loop: true,
-
-//     pagination: {
-//       el: pagination,
-//       clickable: true,
-//     },
-
-//     navigation: {
-//       nextEl: nextButton,
-//       prevEl: prevButton,
-//     },
-//   });
-// });
